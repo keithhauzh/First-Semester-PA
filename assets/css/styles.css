@@ -1,0 +1,131 @@
+body {
+  color: #333333;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.intro {
+  width: 100%;
+}
+
+.introcontainer {
+  background-color: #0051c9;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.introtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.imageintrocontainer {
+  border: 50px solid #0051c9;
+  border-radius: 100%;
+}
+
+.introbutton {
+  background: #ff5722;
+}
+
+.iconcolorwid {
+  color: #00bcd4;
+}
+
+.whatidocol {
+  height: 100%;
+}
+
+.portfolio {
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.contactbutton {
+  background-color: #ff5722;
+  color: white;
+}
+
+.portfolioposition {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Centers content inside */
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 188, 212, 0.9); /* Semi-transparent background */
+  color: white;
+  opacity: 0; /* Hide overlay by default */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.portfolioposition:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.overlaybutton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Centers content inside */
+  justify-content: center;
+  align-items: center;
+  background: #0051c9;
+  color: white;
+  opacity: 0; /* Hide overlay by default */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact2button:hover .overlaybutton {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.viewproject {
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+}
+
+.github {
+  border: 1px solid white;
+  background-color: rgba(0, 188, 212, 0.9);
+  color: white;
+}
+
+.contact2button {
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .tablet-padding {
+    margin-top: 20px;
+  }
+
+  .contactinfo {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .mobiletext {
+    align-items: center;
+  }
+}
